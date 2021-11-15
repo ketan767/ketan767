@@ -1,0 +1,12 @@
+import pandas
+data = pandas.read_fwf("iris.data")
+print("***Print first 5 rows.***")
+print(data.head())
+print("***used to genreates statistics.***")
+print(data.describe())
+print("***used to genreates statistics***")
+print(data.memory_usage(deep=True))
+print("***used to access specific cloum or rows***")
+print(data.loc[:5, ["sepal.width"]])
+print("***Value counts***")
+print(data["sepal.width"].value_counts())
